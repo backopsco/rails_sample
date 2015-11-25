@@ -1,0 +1,18 @@
+development: &default
+  adapter:    mysql2
+  encoding:   utf8
+  reconnect:  false
+  host:       127.0.0.1
+  database:   scalus_sample_api_development
+  pool:       5
+  username:   root
+  password:
+  socket:     /tmp/mysql.sock
+
+test:
+  <<: *default
+  database: scalus_sample_api_test
+
+production:
+  <<: *default
+  database: scalus_sample_api_production
