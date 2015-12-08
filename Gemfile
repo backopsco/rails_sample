@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'oauth2'
+gem 'faraday'
 #gem 'omniauth'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

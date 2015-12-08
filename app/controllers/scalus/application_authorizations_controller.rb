@@ -29,8 +29,12 @@ class Scalus::ApplicationAuthorizationsController < ApplicationController
         token_url:      '/oauth2/token'
     )
   end
+  # client = OAuth2::Client.new(the_client_id, the_client_secret, :site => 'http://hq.lvh.me:4000', organization: 'hq', authorize_url: '/oauth2/authorize',token_url: '/oauth2/token')
+  # access_token = client.password.get_token('drhenner@scalus.com', 'welcome1')
+  # access_token.token
 
   def my_organization_site
+    # http://hq.lvh.me:4000
     "http://#{auth_info.scalus_slug}.#{org_site}"
   end
 

@@ -135,6 +135,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  faraday
   jquery-rails
   mysql2
   oauth2

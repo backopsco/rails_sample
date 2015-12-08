@@ -1,0 +1,10 @@
+<h1>Tasks</h1>
+
+<ul>
+<% @tasks['data'].each do |task| %>
+  <li><%= task['id'] %>: <%= task['attributes']["title"] %></li>
+<% end %>
+</ul>
+<p>
+  Go back to look at your <%= link_to 'access token', root_path %>
+</p>
